@@ -2,11 +2,7 @@
 
 Generative Art Synthesizer - a python program that generates python programs that generates generative art.
 
-![0b02b172-ad67-449b-b4a2-ff645b28c508.py.png](examples/0b02b172-ad67-449b-b4a2-ff645b28c508.py.png)
-
-![2e1c805f-4412-4836-89cf-099ed0ea6b1a.py.png](examples/2e1c805f-4412-4836-89cf-099ed0ea6b1a.py.png)
-
-![48871c12-58f4-4ea4-8739-5d180021c3cb.py.png](examples/48871c12-58f4-4ea4-8739-5d180021c3cb.py.png)
+<img src="examples/0b02b172-ad67-449b-b4a2-ff645b28c508.py.png" width="300"> <img src="examples/2e1c805f-4412-4836-89cf-099ed0ea6b1a.py.png" width="300"> <img src="examples/48871c12-58f4-4ea4-8739-5d180021c3cb.py.png" width="300">
 
 *Examples of images that could be generated with GAS. You can see source code of python programs that reproduce these images by clicking on them.*
 
@@ -52,6 +48,7 @@ There are two core methods in use:
 
 **Transit** - takes a batch of channels and produces a linear combination of them in a way that sum of all channels never escapes [-1,1] range.
 
-**Sin** - takes single channel and produce $x_{out} = sin(\dfrac{1}{2}\cdot x_{in} \cdot \pi \cdot {scale} + {shift})$
+**Sin** - takes single channel and produce  
+<img src="https://render.githubusercontent.com/render/math?math=x_%7Bout%7D%20%3D%20sin(%5Cdfrac%7B1%7D%7B2%7D%5Ccdot%20x_%7Bin%7D%20%5Ccdot%20%5Cpi%20%5Ccdot%20%7Bscale%7D%20%2B%20%7Bshift%7D)">  
 
 Similarly to Fourier series these two methods can approximate any function that is defined within [-1, 1] range. So, theoretically, we already can generate any possible image with these two methods only, although, probability of getting any interesting result is pretty low. To battle that there are several additional methods defined.
