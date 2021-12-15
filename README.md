@@ -2,7 +2,7 @@
 
 Generative Art Synthesizer - a python program that generates python programs that generates generative art.
 
-<a href="examples/0b02b172-ad67-449b-b4a2-ff645b28c508.py"><img src="examples/0b02b172-ad67-449b-b4a2-ff645b28c508.py.png" width="240"></a> <a href="examples/2e1c805f-4412-4836-89cf-099ed0ea6b1a.py"><img src="examples/2e1c805f-4412-4836-89cf-099ed0ea6b1a.py.png" width="240"></a> <a href="examples/48871c12-58f4-4ea4-8739-5d180021c3cb.py"><img src="examples/48871c12-58f4-4ea4-8739-5d180021c3cb.py.png" width="240"></a>
+<a href="examples/0b02b172-ad67-449b-b4a2-ff645b28c508.py"><img src="examples/0b02b172-ad67-449b-b4a2-ff645b28c508.py.png" style="width:30%"></a> <a href="examples/2e1c805f-4412-4836-89cf-099ed0ea6b1a.py"><img src="examples/2e1c805f-4412-4836-89cf-099ed0ea6b1a.py.png" style="width:30%"></a> <a href="examples/48871c12-58f4-4ea4-8739-5d180021c3cb.py"><img src="examples/48871c12-58f4-4ea4-8739-5d180021c3cb.py.png" style="width:30%"></a>
 
 *Examples of images that could be generated with GAS. You can see source code of python programs that reproduce these images by clicking on them.*
 
