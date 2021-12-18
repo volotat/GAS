@@ -59,51 +59,6 @@ ry = (x * np.cos(phi) + y * np.sin(phi)) / 1.5
 for i in range(15):
     grid[:,:,i * 2 + 0] = x
     grid[:,:,i * 2 + 1] = y
-'''
-
-grid[:,:,0 ] = x
-grid[:,:,1 ] = y
-grid[:,:,2 ] = rx
-grid[:,:,3 ] = ry
-
-grid[:,:, 4] = np.sin(x * 0.5 * np.pi)
-grid[:,:, 5] = np.sin(y * 0.5 * np.pi)
-grid[:,:, 6: 8] = magnitude(grid[:,:,4:6], [0, 1])
-
-grid[:,:, 8] = np.sin(-x * 0.5 * np.pi)
-grid[:,:, 9] = np.sin(-y * 0.5 * np.pi)
-grid[:,:,10] = np.sin(rx * 0.5 * np.pi)
-grid[:,:,11] = np.sin(ry * 0.5 * np.pi)
-grid[:,:,12] = np.sin(-rx * 0.5 * np.pi)
-grid[:,:,13] = np.sin(-ry * 0.5 * np.pi)
-
-grid[:,:,14] = np.sin(x * 0.5 * np.pi* 2)
-grid[:,:,15] = np.sin(y * 0.5 * np.pi* 2)
-grid[:,:,16:18] = magnitude(grid[:,:,14:16], [0, 1])
-
-grid[:,:,18] = np.cos(x * 0.5 * np.pi* 2)
-grid[:,:,19] = np.cos(y * 0.5 * np.pi* 2)
-grid[:,:,20:22] = magnitude(grid[:,:,18:20], [0, 1])
-
-grid[:,:,22] = np.sin(rx * 0.5 * np.pi* 2)
-grid[:,:,23] = np.sin(ry * 0.5 * np.pi* 2)
-grid[:,:,24:26] = magnitude(grid[:,:,22:24], [0, 1])
-
-grid[:,:,26] = np.cos(rx * 0.5 * np.pi* 2)
-grid[:,:,27] = np.cos(ry * 0.5 * np.pi* 2)
-grid[:,:,28:30] = magnitude(grid[:,:,26:28], [0, 1])
-'''
-'''
-grid[:,:,30:32] = np.sin(x * 0.5 * np.pi * 3), np.sin(y * 0.5 * np.pi * 3)
-grid[:,:,32:34] = magnitude(grid, [30, 31])
-grid[:,:,34:36] = np.cos(x * 0.5 * np.pi * 3), np.cos(y * 0.5 * np.pi * 3)
-grid[:,:,36:38] = magnitude(grid, [34, 35])
-
-grid[:,:,38:40] = np.sin(rx * 0.5 * np.pi * 3), np.sin(ry * 0.5 * np.pi * 3)
-grid[:,:,40:42] = magnitude(grid, [40, 41])
-grid[:,:,42:44] = np.cos(rx * 0.5 * np.pi * 3), np.cos(ry * 0.5 * np.pi * 3)
-grid[:,:,44:46] = magnitude(grid, [44, 45])
-'''
 
 #apply transformations to the grid
 grid = transit(grid, 29, [19, 22], [0.162570065071097, 0.837429934928903])
