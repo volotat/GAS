@@ -30,7 +30,7 @@ gas.py
 
 At the start of the session there will be created a run's folder with time of start of the run as its name. Inside the folder there will be created another folder called "backup" that contains the current version of project files. After that new programs will be generated and executed automatically one by one. Generated programs will create two files - the resulting image and an image of final layers that produced the result (see "Generation method" for more details). There also will be a score at the start of the name of the file that is given by a machine learning model that tries to estimate how beautiful an image is to help to sort them.
 
-## NFT Gallery
+## Gallery
 
 You can see some of the most interesting images generated with GAS here:  [https://opensea.io/collection/genas](https://opensea.io/collection/genas)
 
