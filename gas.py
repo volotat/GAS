@@ -45,6 +45,7 @@ for file_path in project_files:
     binary_gas_hash = bytes(x ^ y for x, y in zip(binary_gas_hash, binary_file_hash))  
 
 gas_hash = binary_gas_hash.hex()
+
 gas_date = datetime.datetime.utcfromtimestamp(gas_date).strftime("%Y-%m-%d %H:%M:%S UTC")
 
 print ('Current GAS hash:', gas_hash)
@@ -80,7 +81,7 @@ for i in range(NUM_SAMPLES):
         step_1 += """# Generation date: %s \n""" % (generation_date)
         step_1 += """# GAS change date: %s \n""" % (gas_date)
         step_1 += """# GAS md5 hash: %s \n""" % (gas_hash) 
-        step_1 += """# Python version: %s \n""" % (sys.version)
+        step_1 += """# Python version: %s \n""" % "".join(list(s for s in sys.version if s. isprintable()))
         step_1 += """# For more information visit: https://github.com/volotat/GAS \n"""
         step_1 += """\n""" 
         step_1 += """#import python libraries \n""" 
