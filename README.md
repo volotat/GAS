@@ -34,8 +34,6 @@ At the start of the session there will be created a run's folder with time of st
 
 You can see some of the most interesting images generated with GAS here:  [https://opensea.io/collection/genas](https://opensea.io/collection/genas)
 
-If you are willing to support the project, you can acquire any NFT out of that collection. Each such NFT contains a python program that generates the image as an unlockable content.
-
 ## Generation method
 
 In its core GAS image generation process is very similar to other math driven generative art projects where randomly generated functions are used to produce an image. However, GAS uses some strict boundaries for transformation methods, specifically - all methods always defined on [-1,1] range of values and returns only the values within that range. Also, all methods are called in a similar fashion: "x = method(x, **params)". It allows generating programs without too complicated rules that are guaranteed to always terminate. 
